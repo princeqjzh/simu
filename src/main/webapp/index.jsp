@@ -9,7 +9,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>OneAlert 自动化测试管理系统</title>
+		<title>OneAlert 自动化测试管理系统 </title>
 		<!-- basic styles -->
 		<%@ include file="common/CommonStyle.jsp"%>
 	</head>
