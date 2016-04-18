@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Testcase">
+
+  <resultMap type="com.onealert.bean.Testcase" id="TestcaseResult">
+    <id column="TESTCASE_ID" jdbcType="BIGINT" property="testcase_id"/>
+    <result column="TESTCASE_NAME" jdbcType="VARCHAR" property="testcase_name"/>
+    <result column="CATEGORY" jdbcType="VARCHAR" property="category"/>
+    <result column="POINT" jdbcType="VARCHAR" property="point"/>
+  </resultMap>
+
+  <select id="queryTestcaseList" parameterType="com.onealert.bean.Testcase" resultMap="TestcaseResult">
+    select <include refid="columns"/> from TESTCASE
+  </select>
+  
+  <sql id="columns">TESTCASE_ID,TESTCASE_NAME,CATEGORY,POINT</sql>
+</mapper>

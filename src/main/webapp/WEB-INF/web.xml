@@ -49,8 +49,17 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  
     </listener> 
     
-    
 <servlet>
+	<servlet-name>ListTestCaseServlet</servlet-name>
+	<servlet-class>com.onealert.servlet.ListTestCaseServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ListTestCaseServlet</servlet-name>
+	<url-pattern>/ListTestCase.action</url-pattern>
+</servlet-mapping>
+    
+    
+<!-- <servlet>
 	<servlet-name>myBatisServlet</servlet-name>
 	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	<init-param>
@@ -63,7 +72,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 <servlet-mapping>
 	<servlet-name>myBatisServlet</servlet-name>
 	<url-pattern>/</url-pattern>
-</servlet-mapping>
+</servlet-mapping> -->
 
     <!-- 字符过滤_防止添加到数据库中的数据为乱码 -->  
     <filter>  

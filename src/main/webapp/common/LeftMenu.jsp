@@ -52,8 +52,9 @@ alert(_LEFT_MENU); --%>
 			<%}%>><a href="index.jsp"> <i
 				class="icon-dashboard"></i> <span class="menu-text"> 测试结果统计 </span>
 		</a></li>
-		<li <%if ("typography".equalsIgnoreCase(_currentMenu)) {%> class='active'
-			<%}%>><a href="typography.jsp"> <i class="icon-text-width"></i>
+		<%-- <li <%if ("typography".equalsIgnoreCase(_currentMenu)) {%> class='active' --%>
+		<li <%if ("alarmInterfaceTest".equalsIgnoreCase(_currentMenu)) {%> class='active'
+			<%}%>><!-- <a href="typography.jsp"> --> <a href="alarmInterfaceTest.jsp"> <i class="icon-text-width"></i>
 				<span class="menu-text"> 告警接口测试 </span>
 		</a></li>
 
@@ -131,9 +132,9 @@ alert(_LEFT_MENU); --%>
 			<%}%>><a href="queryUserByEmail.jsp"> <i
 						class="icon-double-angle-right"></i> 查询单个用户
 				</a></li>
-				<li <%if ("queryOwnerByEmail".equalsIgnoreCase(_currentMenu)) {%> class='active'
-			<%}%>><a href="queryOwnerByEmail.jsp"> <i
-						class="icon-double-angle-right"></i> 查询租户
+				<li <%if ("queryAllTestCase".equalsIgnoreCase(_currentMenu)) {%> class='active'
+			<%}%>><a href="queryAllTestCase.jsp"> <i
+						class="icon-double-angle-right"></i> 查询所有测试用例
 				</a></li>
 				<li <%if ("queryUserByOwner".equalsIgnoreCase(_currentMenu)) {%> class='active'
 			<%}%>><a href="queryUserByOwner.jsp"> <i
